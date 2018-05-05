@@ -1,0 +1,46 @@
+clear;
+clc;
+close all;
+subplot(1,1,1);
+%Topic_1
+disp('Topic_1');
+x=linspace(0,2*pi,101);
+y=cos(x).*(0.5+3*sin(x)./(1+x.^2));
+plot(x,y);
+title('Topic1');
+pause;
+%Topic_2
+disp('Topic_2');
+Topic_2;
+pause; 
+%Topic_3
+disp('Topic_3');
+Topic_3;
+pause;
+%Topic_4
+disp('Topic_4');
+for x=1:0.05:4
+    subplot(1,3,1);
+    Topic_4(x,1,1);
+    title('Topic4-a');
+    subplot(1,3,2);
+    Topic_4(1,x,1);
+    title('Topic4-b');
+    subplot(1,3,3);
+    Topic_4(1,1,x);
+    title('Topic4-n');
+    pause(0.001);
+end
+pause;
+%Topic_5
+disp('Topic_5');
+x=linspace(-5,5,21);
+y=linspace(0,10,31);
+Topic_5(x,y);
+pause;
+%Topic_6
+subplot(1,1,1);
+disp('Topic_6');
+s=0:0.01:pi/2;
+t=0:0.01:3*pi/2;
+Topic_6(s,t);
