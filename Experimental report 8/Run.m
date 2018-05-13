@@ -64,9 +64,8 @@ line(x,y4);
 title('arctan(x)');
 close 1;
 %Topic_5;
-t=-pi:0.1:pi;
-x=-pi:0.1:pi;
-y=-pi:0.1:pi;
-[x,y]=meshgrid(x,y);
-z=x.^2+y.^2;
-mesh(x,y,z)
+[x,y,z]=cylinder(3,1000);
+mes=surf(x,y,z);
+mes.EdgeColor=[0.5 0.7 1];
+top5=light;
+top5.Color=[0 0 0];
