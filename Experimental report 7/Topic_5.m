@@ -5,6 +5,6 @@ subplot(2,1,1);
 mesh(x,y,z);
 title('Topic5-1');
 subplot(2,1,2);
-surfc(x,y,z);
+contour3(x,y,z);
 title('Topic5-2');
 end
